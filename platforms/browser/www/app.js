@@ -1,11 +1,8 @@
-function showBannerAd() {
-  alert('show Banner Ad');
-}
+window.onload = function() {
+  document.addEventListener('deviceready', initApp);
+};
 
-function showInterstitialAd() {
-  alert('show Interstitial Ad');
-}
-
-function showRewardedVideoAd() {
-  alert('show Rewarded Video Ad');
+function initApp() {
+  //--- Admob in ads.js ----
+  initAds();
 }
